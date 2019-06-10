@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavBarButton } from './shared/models/nav-bar-button';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'bdz';
+  public title: string = 'Bdz et DVDs';
+
+  public buttons: NavBarButton[] = [];
 }
